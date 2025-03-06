@@ -9,7 +9,7 @@ services:
       - 9088:8088
     volumes:
       - gateway-data:/usr/local/bin/ignition/data
-      - ./gw-init/gateway.gwbk:/restore.gwbk
+      - ./gw-init/core_test.gwbk:/restore.gwbk
       - ./gw-init/gateway-uuid.txt:/usr/local/bin/ignition/data/.uuid
       - ./gw-init/gateway-metro-keystore:/usr/local/bin/ignition/data/local/metro-keystore
     networks:
